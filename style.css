@@ -1,94 +1,165 @@
-*{
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
 
-.container{
+.container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(images/background.png);
     background-position: center;
     background-size: cover;
-    padding: 0 7%;
+    padding: 0 4%; /* Adjusted padding for smaller screens */
     color: #fff;
 }
 
-nav{
+nav {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0; /* Adjusted padding for smaller screens */
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
-.logo{
-    width: 50px;
+
+.logo {
+    width: 30px; /* Adjusted width for smaller screens */
     cursor: pointer;
 }
-nav ul{
-    flex: 1;
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjusted margin for smaller screens */
 }
-nav ul li{
-    display: inline-block;
-    margin: 10px 20px;
+
+nav ul li {
+    display: block;
+    margin: 10px 0; /* Adjusted margin for smaller screens */
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-nav .btn{
+
+nav .btn {
     color: #fff;
     text-decoration: none;
     border: 1px solid #fff;
-    padding: 10px 30px;
+    padding: 8px 20px; /* Adjusted padding for smaller screens */
     border-radius: 20px;
 }
-.content{
-    margin-top: 12%;
+
+.content {
+    margin-top: 20%; /* Adjusted margin for smaller screens */
 }
-.content h1{
-    font-size: 88px;
-    margin-bottom: 15px;
+
+.content h1 {
+    font-size: 60px; /* Adjusted font size for smaller screens */
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
 }
-.content h1 span{
+
+.content h1 span {
     color: #ff960b;
 }
-.content p{
-    line-height: 22px;
-    font-size: 14px;
+
+.content p {
+    line-height: 30px; /* Adjusted line height for smaller screens */
+    font-size: 30px; /* Adjusted font size for smaller screens */
 }
-.content .btn{
+
+.content .btn {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 20px; /* Adjusted margin for smaller screens */
     background: #ff960b;
     color: #fff;
     text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 30px;
+    padding: 19px 30px; /* Adjusted padding for smaller screens */
+    border-radius: 20px; /* Adjusted border-radius for smaller screens */
 }
 
-.coin-list{
+.coin-list {
     position: absolute;
-    right: 10%;
-    bottom: 50px;
+    right: 4%; /* Adjusted right positioning for smaller screens */
+    bottom: 20px; /* Adjusted bottom positioning for smaller screens */
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
-.coin{
+
+.coin {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    margin: 0 15px;
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    margin: 10px 0; /* Adjusted margin for smaller screens */
     color: #ff960b;
     border: 1px solid #fff;
-    padding: 20px 30px;
+    padding: 12px 20px; /* Adjusted padding for smaller screens */
     border-radius: 8px;
 }
-.coin img{
-    width: 40px;
+
+.coin img {
+    width: 30px; /* Adjusted width for smaller screens */
     margin-right: 10px;
 }
-.coin h3{
+
+.coin h3 {
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 3px; /* Adjusted margin for smaller screens */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content h1 {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+        margin-bottom: 10px; /* Adjusted margin for smaller screens */
+    }
+    .content p {
+        line-height: 25px; /* Adjusted line height for smaller screens */
+        font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+
+    .content .btn {
+        display: inline-block;
+        margin-top: 20px; /* Adjusted margin for smaller screens */
+        background: #ff960b;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 25px; /* Adjusted padding for smaller screens */
+        border-radius: 20px; /* Adjusted border-radius for smaller screens */
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    /* Styles for tablets and larger screens */
+    .container {
+        padding: 0 7%; /* Reverting padding for larger screens */
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    .content {
+        margin-top: 12%; /* Reverting margin for larger screens */
+    }
 }
