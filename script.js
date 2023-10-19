@@ -2,6 +2,8 @@ var btc = document.getElementById("bitcoin");
 var eth = document.getElementById("ethereum");
 var doge = document.getElementById("dogecoin");
 var sol = document.getElementById("solana");
+var tet = document.getElementById("tether");
+
 
 var settings = {
     "async": true,
@@ -12,8 +14,9 @@ var settings = {
 };
 
 $.ajax(settings).done(function (response){
-    btc.innerHTML = response.bitcoin.usd;
-    eth.innerHTML = response.ethereum.usd;
-    doge.innerHTML = response.dogecoin.usd;
-    sol.innerHTML = response.solana.usd
+    btc.innerHTML = "$" + response.bitcoin.usd;
+    eth.innerHTML = "$" + response.ethereum.usd;
+    doge.innerHTML = "$" + response.dogecoin.usd;
+    sol.innerHTML = "$" + response.solana.usd
+    tet.innerHTML = "$" + response.tether.usd
 });
