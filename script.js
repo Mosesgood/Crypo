@@ -20,3 +20,5 @@ $.ajax(settings).done(function (response){
     sol.innerHTML = "$" + response.solana.usd
     tet.innerHTML = "$" + response.tether.usd
 });
+
+   

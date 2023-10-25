@@ -144,6 +144,7 @@ nav .btn {
 .coins{
     display: flex;
     flex-direction: column;
+    
 }
 .coin-row{
     grid-gap: 2rem;
@@ -175,6 +176,35 @@ nav .btn {
     background-color: white;
   }
 
+  .content3 {
+    display: none;
+  }
+
+  .b2{
+    background-color: #f3f2f4;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+    background: linear-gradient(25deg,#2600fc,#ff00ea);
+    margin-right: 20px;
+}
+
+.bu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bw{
+    flex: 1;
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  
 
 @media only screen and (max-width: 600px) {
     .content h1 {
