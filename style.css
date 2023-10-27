@@ -45,7 +45,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    
+    font-size: 24px;
 }
 
 nav .btn {
@@ -212,8 +212,8 @@ nav .btn {
         margin-bottom: 10px; /* Adjusted margin for smaller screens */
     }
     .content p {
-        line-height: 25px; /* Adjusted line height for smaller screens */
-        font-size: 18px; /* Adjusted font size for smaller screens */
+        line-height: 38px; /* Adjusted line height for smaller screens */
+        font-size: 35px; /* Adjusted font size for smaller screens */
     }
 
     .content .btn {
